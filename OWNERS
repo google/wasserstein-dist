@@ -1,0 +1,5 @@
+set noparent
+file://depot/google3/OWNERS
+
+# project owners
+chl
