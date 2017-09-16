@@ -20,7 +20,7 @@ from __future__ import print_function
 import cPickle
 import numpy as np
 
-import tensorflow.google as tf
+import tensorflow as tf
 
 
 class Dataset(object):
