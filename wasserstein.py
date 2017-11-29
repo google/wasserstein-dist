@@ -53,7 +53,7 @@ class Wasserstein(object):
     source_ims = self.source_gen.get_batch(bs=num, reuse=True)
     vis_images = self.add_summary_montage(source_ims, 'source_ims', num)
 
-    target_ims = self.target_gen.get_batch(bs=num)
+    target_ims = self.target_gen.get_batch()
     _ = self.add_summary_montage(target_ims, 'target_ims', num)
 
     c_xy = self.basedist(source_ims, target_ims)  # pairwise cost
