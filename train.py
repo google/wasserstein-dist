@@ -27,6 +27,11 @@ from dataset import Dataset
 from generator import Generator
 from wasserstein import Wasserstein
 
+try:
+  xrange
+except NameError:
+  xrange = range
+
 tf.flags.DEFINE_string('logdir', '/tmp/wasserstein',
                        'Directory to put the training logs.')
 tf.flags.DEFINE_string('filepattern', '/tmp/cifar10/cifar_train_class_%d.pic',
